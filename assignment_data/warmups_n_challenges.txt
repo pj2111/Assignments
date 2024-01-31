@@ -1,0 +1,30 @@
+31/01: Start of Warmups & Problem listing
+Suggestion: 
+    a) Write functions for doing the required processing
+    b) Write atleast 2 test cases for testing out the functions as you code 
+    c) Write comments on each step in the functions
+- Problems:
+    1) Create a program that prompts for a quote and an author.Display the quotation and author as shown in the example
+        input >> What is the quote: “Opportunities don't happen, you create them.”
+        input >> Who said it: Chris Grosser
+        output >> Chris Grosser says “Opportunities don't happen, you create them.”
+
+    2) Create a program that determines how many years you have left until retirement and the year you can retire. It should
+        prompt for your current age and the age you want to retire and display the output as shown in the example that follows.
+        input >> What is your age now? : 35
+        input >> What age you will retire? : 75
+        output >> You have 40  years until you retire. its 2024, you can retire in 2064
+
+    3) Count the freq of a given word occurences in the provided sentence. Word can be like "nice" 
+        input >> this is a nice list of words to make a nice python code.
+        output >> 2
+
+    4) Create a Volume calculator program that accepts many 3d shapes like sphere, cone, cube, cuboid, etc.
+    Program should ask for the appropriate dimension of the given shape, and then return the volume
+        input >> What is the shape you have in mind: cube
+        input >> What is the length of cube side: 21
+        output >> The cube has volume of 9261
+- Warmups:
+    1) 
+
+    
