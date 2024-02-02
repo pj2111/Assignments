@@ -3,7 +3,7 @@ Suggestion:
     a) Write functions for doing the required processing
     b) Write atleast 2 test cases for testing out the functions as you code 
     c) Write comments on each step in the functions
-- Problems:
+- Problems(Set 1):
     1) Create a program that prompts for a quote and an author.Display the quotation and author as shown in the example
         input >> What is the quote: “Opportunities don't happen, you create them.”
         input >> Who said it: Chris Grosser
@@ -24,7 +24,12 @@ Suggestion:
         input >> What is the shape you have in mind: cube
         input >> What is the length of cube side: 21
         output >> The cube has volume of 9261
+- Problems(Set 2):
+    
 - Warmups:
-    1) 
+    > Update the comments in the Simple Generator & CSV File Operation warmups
+    1) Simple Generator (assignment_data\Generator_warmup.ipynb) 
+    2) CSV File operation (assignment_data\File_ops_warmup.ipynb) 
+    3) String Manipulation (assignment_data\string_manipulation.ipynb)
 
     
