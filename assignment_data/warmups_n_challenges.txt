@@ -9,6 +9,22 @@ Suggestion:
         input >> Who said it: Chris Grosser
         output >> Chris Grosser says “Opportunities don't happen, you create them.”
 
+- Solution - E1_Quotes_and_Authors.ipynb
+- Pseudocode - 
+        1)take input from user save in quote
+        2)take second input form user and save in auth
+        3)print aut says quote
+
+
+
+
+
+
+
+
+
+
+- Problems(Set 2):
     2) Create a program that determines how many years you have left until retirement and the year you can retire. It should
         prompt for your current age and the age you want to retire and display the output as shown in the example that follows.
         input >> What is your age now? : 35
@@ -24,8 +40,7 @@ Suggestion:
         input >> What is the shape you have in mind: cube
         input >> What is the length of cube side: 21
         output >> The cube has volume of 9261
-- Problems(Set 2):
-    
+        
 - Warmups:
     > Update the comments in the Simple Generator & CSV File Operation warmups
     1) Simple Generator (assignment_data\Generator_warmup.ipynb) 
