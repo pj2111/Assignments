@@ -1,0 +1,9 @@
+create a class gadget with 3 attributes - name, price, quantity and a list names. Create a dunder method which prints name. 
+Create a method to calculate total spend. 
+
+create an instance 
+
+provide values to names list
+print names list in instance
+
+create a method to print list - names, also print it is empty if so
