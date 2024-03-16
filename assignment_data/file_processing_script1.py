@@ -24,7 +24,10 @@ class File:
         return f"Data of file --> {self.filename}"
                 
     def file_shape(self):
-        return(len(self.temp_list),len(self.temp_list[0]))
+        try:
+            return(len(self.temp_list),len(self.temp_list[0]))
+        except Exception as e:
+            print(e, "Probably need to run file_process method")
         # return len(file_process(self)),len(file_process(self)[0])
         
     def col_names(self):
