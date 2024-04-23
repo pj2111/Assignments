@@ -1,1 +1,3 @@
 *.DS_Store
+*.jsonl.gz
+*.ipynb_checkpoints/
