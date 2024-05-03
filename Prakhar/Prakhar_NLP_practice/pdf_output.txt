@@ -1,0 +1,2317 @@
+Chapter: 1
+Saying Hello
+The “Hello, World” program is the first program you learn
+to write in many languages, but it doesn’t involve any input.
+So create a program that prompts for your name and prints
+a greeting using your name.
+
+Example Output
+What is your name? Brian
+Hello, Brian, nice to meet you!
+Constraint
+• Keep the input, string concatenation, and output sepa-
+rate.
+
+Challenges
+• Write a new version of the program without using any
+variables.
+• Write a version of the program that displays different
+greetings for different people. This would be a good
+challenge to try after you’ve completed the exercises in
+Chapter 4,
+Data Structures
+Chapter 2. Input, Processing, and Output
+
+
+Chapter: 2
+Counting the Number of Characters
+Create a program that prompts for an input string and dis-
+plays output that shows the input string and the number of
+characters the string contains.
+
+Example Output
+What is the input string? Homer
+Homer has 5 characters.
+
+Constraints
+• Be sure the output contains the original string.
+• Use a single output statement to construct the output.
+• Use a built-in function of the programming language to
+determine the length of the string.
+
+Challenges
+• If the user enters nothing, state that the user must enter
+something into the program.
+• Implement this program using a graphical user interface
+and update the character counter every time a key is
+pressed. If your language doesn’t have a particularly
+friendly GUI library, try doing this exercise with HTML
+and JavaScript instead.
+report erratum  •  discuss
+
+
+Chapter: 3
+Printing Quotes
+Quotation marks are often used to denote the start and end
+of a string. But sometimes we need to print out the quotation
+marks themselves by using
+Create a program that prompts for a quote and an author.
+Display the quotation and author as shown in the example
+output.
+
+Example Output
+What is the quote? These aren't the droids you're looking for.
+Who said it? Obi-Wan Kenobi
+Obi-Wan Kenobi says, "These aren't the droids
+you're looking for."
+
+Constraints
+• Use a single output statement to produce this output,
+using appropriate string-escaping techniques for quotes.
+• If your language supports string interpolation or string
+substitution, don’t use it for this exercise. Use string
+concatenation instead.
+
+Challenge
+• In
+working with lists of data. Modify this program so that
+instead of prompting for quotes from the user, you cre-
+ate a structure that holds quotes and their associated
+attributions and then display all of the quotes using the
+format in the example. An array of maps would be a
+good choice.
+Chapter 2. Input, Processing, and Output
+
+
+Chapter: 4
+Mad Lib
+Mad libs are a simple game where you create a story tem-
+plate with blanks for words. You, or another player, then
+construct a list of words and place them into the story, cre-
+ating an often silly or funny story as a result.
+Create a simple mad-lib program that prompts for a noun,
+a verb, an adverb, and an adjective and injects those into a
+story that you create.
+
+Example Output
+Enter a noun: dog
+Enter a verb: walk
+Enter an adjective: blue
+Enter an adverb: quickly
+Do you walk your blue dog quickly? That's hilarious!
+
+Constraints
+• Use a single output statement for this program.
+• If your language supports string interpolation or string
+substitution, use it to build up the output.
+
+Challenges
+• Add more inputs to the program to expand the story.
+• Implement a branching story, where the answers to
+questions determine how the story is constructed. You’ll
+explore this concept more in the problems in
+4,
+report erratum  •  discuss
+
+
+Chapter: 5
+Simple Math
+You’ll often write programs that deal with numbers. And
+depending on the programming language you use, you’ll
+have to convert the inputs you get to numerical data types.
+Write a program that prompts for two numbers. Print the
+sum, difference, product, and quotient of those numbers as
+shown in the example output:
+
+Example Output
+What is the first number? 10
+What is the second number? 5
+10 + 5 = 15
+10 - 5 = 5
+10 * 5 = 50
+10 / 5 = 2
+
+Constraints
+• Values coming from users will be strings. Ensure that
+you convert these values to numbers before doing the
+math.
+• Keep the inputs and outputs separate from the numerical
+conversions and other processing.
+• Generate a single output statement with line breaks in
+the appropriate spots.
+
+Challenges
+• Revise the program to ensure that inputs are entered as
+numeric values. Don’t allow the user to proceed if the
+value entered is not numeric.
+• Don’t allow the user to enter a negative number.
+• Break the program into functions that do the computa-
+tions. You’ll explore functions in
+on page 45
+• Implement this program as a GUI program that automat-
+ically updates the values when any value changes.
+Chapter 2. Input, Processing, and Output
+
+
+Chapter: 6
+Retirement Calculator
+Your computer knows what the current year is, which means
+you can incorporate that into your programs. You just have
+to figure out how your programming language can provide
+you with that information.
+Create a program that determines how many years you have
+left until retirement and the year you can retire. It should
+prompt for your current age and the age you want to retire
+and display the output as shown in the example that follows.
+
+Example Output
+What is your current age? 25
+At what age would you like to retire? 65
+You have 40 years left until you can retire.
+It's 2015, so you can retire in 2055.
+
+Constraints
+• Again, be sure to convert the input to numerical data
+before doing any math.
+• Don’t hard-code the current year into your program.
+Get it from the system time via your programming lan-
+guage.
+
+Challenge
+• Handle situations where the program returns a negative
+number by stating that the user can already retire.
+What You Learned
+These problems were pretty simple, but hopefully they got
+you thinking about keeping input, processing, and output
+separate. When programs are simple, it’s tempting to just
+do some math or string concatenation inside the program’s
+output statements, but as your programs get more complex,
+you’ll find you need to break things into reusable compo-
+nents. You’ll be glad you were disciplined from the start.
+Head on over to the next chapter. It’s time to do some more
+serious math.
+report erratum  •  discuss
+
+
+Chapter: 7
+Area of a Rectangular Room
+When working in a global environment, you’ll have to
+present information in both metric and Imperial units. And
+you’ll need to know when to do the conversion to ensure
+the most accurate results.
+Create a program that calculates the area of a room. Prompt
+the user for the length and width of the room in feet. Then
+display the area in both square feet and square meters.
+
+Example Output
+What is the length of the room in feet? 15
+What is the width of the room in feet? 20
+You entered dimensions of 15 feet by 20 feet.
+The area is
+300 square feet
+27.871 square meters
+The formula for this conversion is
+m
+
+Constraints
+• Keep the calculations separate from the output.
+• Use a constant to hold the conversion factor.
+
+Challenges
+• Revise the program to ensure that inputs are entered as
+numeric values. Don’t allow the user to proceed if the
+value entered is not numeric.
+• Create a new version of the program that allows you to
+choose feet or meters for your inputs.
+• Implement this program as a GUI program that automat-
+ically updates the values when any value changes.
+report erratum  •  discuss
+
+
+Chapter: 8
+Pizza Party
+Division isn’t always exact, and sometimes you’ll write
+programs that will need to deal with the leftovers as a whole
+number instead of a decimal.
+Write a program to evenly divide pizzas. Prompt for the
+number of people, the number of pizzas, and the number of
+slices per pizza. Ensure that the number of pieces comes out
+even. Display the number of pieces of pizza each person
+should get. If there are leftovers, show the number of leftover
+pieces.
+
+Example Output
+How many people? 8
+How many pizzas do you have? 2
+8 people with 2 pizzas
+Each person gets 2 pieces of pizza.
+There are 0 leftover pieces.
+
+Challenges
+• Revise the program to ensure that inputs are entered as
+numeric values. Don’t allow the user to proceed if the
+value entered is not numeric.
+• Alter the output so it handles pluralization properly,
+for example:
+Each person gets 2 pieces of pizza.
+or
+Each person gets 1 piece of pizza.
+Handle the output for leftover pieces appropriately as
+well.
+• Create a variant of the program that prompts for the
+number of people and the number of pieces each person
+wants, and calculate how many full pizzas you need to
+purchase.
+Chapter 3. Calculations
+
+
+Chapter: 9
+Paint Calculator
+Sometimes you have to round up to the next number rather
+than follow standard rounding rules.
+Calculate gallons of paint needed to paint the ceiling of a
+room. Prompt for the length and width, and assume one
+gallon covers 350 square feet. Display the number of gallons
+needed to paint the ceiling as a
+
+Example Output
+You will need to purchase 2 gallons of
+paint to cover 360 square feet.
+Remember, you can’t buy a partial gallon of paint. You must
+round up to the next whole gallon.
+
+Constraints
+• Use a constant to hold the conversion rate.
+• Ensure that you round
+
+Challenges
+• Revise the program to ensure that inputs are entered as
+numeric values. Don’t allow the user to proceed if the
+value entered is not numeric.
+• Implement support for a round room.
+• Implement support for an L-shaped room.
+• Implement a mobile version of this app so it can be used
+at the hardware store.
+report erratum  •  discuss
+
+
+Chapter: 10
+Self-Checkout
+Working with multiple inputs and currency can introduce
+some tricky precision issues.
+Create a simple self-checkout system. Prompt for the prices
+and quantities of three items. Calculate the subtotal of the
+items. Then calculate the tax using a tax rate of 5.5%. Print
+out the line items with the quantity and total, and then print
+out the subtotal, tax amount, and total.
+
+Example Output
+Enter the price of item 1: 25
+Enter the quantity of item 1: 2
+Enter the price of item 2: 10
+Enter the quantity of item 2: 1
+Enter the price of item 3: 4
+Enter the quantity of item 3: 1
+Subtotal: $64.00
+Tax: $3.52
+Total: $67.52
+
+Constraints
+• Keep the input, processing, and output parts of your
+program separate. Collect the input, then do the math
+operations and string building, and then print out the
+output.
+• Be sure you explicitly convert input to numerical data
+before doing any calculations.
+
+Challenges
+• Revise the program to ensure that prices and quantities
+are entered as numeric values. Don’t allow the user to
+proceed if the value entered is not numeric.
+• Alter the program so that an indeterminate number of
+items can be entered. The tax and total are computed
+when there are no more items to be entered.
+Chapter 3. Calculations
+
+
+Chapter: 11
+Currency Conversion
+At some point, you might have to deal with currency
+exchange rates, and you’ll need to ensure your calculations
+are as precise as possible.
+Write a program that converts currency. Specifically, convert
+euros to U.S. dollars. Prompt for the amount of money in
+euros you have, and prompt for the current exchange rate
+of the euro. Print out the new amount in U.S. dollars. The
+formula for currency conversion is
+amount
+amount
+from
+× rate
+from
+rateto
+where
+•
+•
+•
+•
+
+Example Output
+How many euros are you exchanging? 81
+What is the exchange rate? 137.51
+81 euros at an exchange rate of 137.51 is
+111.38 U.S. dollars.
+
+Constraints
+• Ensure that fractions of a cent are rounded up to the
+next penny.
+• Use a single output statement.
+
+Challenges
+• Build a dictionary of conversion rates and prompt for
+the countries instead of the rates.
+• Wire up your application to an external API
+1
+vides the current exchange rates.
+1.
+https://openexchangerates.org/
+report erratum  •  discuss
+
+
+Chapter: 12
+Computing Simple Interest
+Computing simple interest is a great way to quickly figure
+out whether an investment has value. It’s also a good way
+to get comfortable with explicitly coding the order of opera-
+tions in your programs.
+Create a program that computes simple interest. Prompt for
+the principal amount, the rate as a percentage, and the time,
+and display the amount accrued (principal + interest).
+The formula for simple interest is
+the principal amount,
+number of years the amount is invested, and
+at the end of the investment.
+
+Example Output
+Enter the principal: 1500
+Enter the rate of interest: 4.3
+Enter the number of years: 4
+After 4 years at 4.3%, the investment will
+be worth $1758.
+
+Constraints
+• Prompt for the rate as a percentage (like
+Divide the input by 100 in your program.
+• Ensure that fractions of a cent are rounded up to the
+next penny.
+• Ensure that the output is formatted as money.
+
+Challenges
+• Ensure that the values entered for principal, rate, and
+number of years are numeric and that the program will
+not let the user proceed without valid inputs.
+• Alter the program to use a function called
+pleInterest
+of years and returns the amount at the end of the
+investment.
+• In addition to printing out the final amount, print out
+the amount at the end of each year.
+Chapter 3. Calculations
+
+
+Chapter: 13
+Determining Compound Interest
+Simple interest is something you use only when making a
+quick guess. Most investments use a compound interest
+formula, which will be much more accurate. And this formu-
+la requires you to incorporate exponents into your programs.
+Write a program to compute the value of an investment
+compounded over time. The program should ask for the
+starting amount, the number of years to invest, the interest
+rate, and the number of periods per year to compound.
+The formula you’ll use for this is
+A = P
+r
+n
+nt
+where
+•
+•
+•
+•
+year.
+•
+
+Example Output
+What is the principal amount? 1500
+What is the rate? 4.3
+What is the number of years? 6
+What is the number of times the interest
+is compounded per year? 4
+$1500 invested at 4.3% for 6 years
+compounded 4 times per year is $1938.84.
+
+Constraints
+• Prompt for the rate as a percentage (like
+Divide the input by 100 in your program.
+• Ensure that fractions of a cent are rounded up to the
+next penny.
+• Ensure that the output is formatted as money.
+report erratum  •  discuss
+
+
+Chapter: 14
+Tax Calculator
+You don’t always need a complex control structure to solve
+simple problems. Sometimes a program requires an extra
+step in one case, but in all other cases there’s nothing to do.
+Write a simple program to compute the tax on an order
+amount. The program should prompt for the order amount
+and the state. If the state is “WI,” then the order must be
+charged 5.5% tax. The program should display the subtotal,
+tax, and total for Wisconsin residents but display just the
+total for non-residents.
+
+Example Output
+What is the order amount? 10
+What is the state? WI
+The subtotal is $10.00.
+The tax is $0.55.
+The total is $10.55.
+Or
+What is the order amount? 10
+What is the state? MN
+The total is $10.00
+
+Constraints
+• Implement this program using only a simple
+ment—don’t use an
+• Ensure that all money is rounded up to the nearest cent.
+• Use a single output statement at the end of the program
+to display the program results.
+
+Challenges
+• Allow the user to enter a state abbreviation in upper,
+lower, or mixed case.
+• Also allow the user to enter the state’s full name in
+upper, lower, or mixed case.
+report erratum  •  discuss
+
+
+Chapter: 15
+Password Validation
+Passwords are validated by comparing a user-provided
+value with a known value that’s stored. Either it’s correct or
+it’s not.
+Create a simple program that validates user login credentials.
+The program must prompt the user for a username and
+password. The program should compare the password given
+by the user to a known password. If the password matches,
+the program should display “Welcome!” If it doesn’t match,
+the program should display “I don’t know you.”
+
+Example Output
+What is the password? 12345
+I don't know you.
+Or
+What is the password? abc$123
+Welcome!
+
+Constraints
+• Use an
+• Make sure the program is case sensitive.
+
+Challenges
+• Investigate how you can prevent the password from
+being displayed on the screen in clear text when typed.
+• Create a map of usernames and passwords and ensure
+the username and password combinations match.
+• Encode the passwords using Bcrypt and store the
+hashes in the map instead of the clear-text passwords.
+Then, when you prompt for the password, encrypt the
+password using Bcrypt and compare it with the value
+in your map.
+Chapter 4. Making Decisions
+
+
+Chapter: 16
+Legal Driving Age
+You can test for equality, but you may need to test to see
+how a number compares to a known value and display a
+message if the number is too low or too high.
+Write a program that asks the user for their age and compare
+it to the legal driving age of sixteen. If the user is sixteen or
+older, then the program should display “You are old enough
+to legally drive.” If the user is under sixteen, the program
+should display “You are not old enough to legally drive.”
+
+Example Output
+What is your age? 15
+You are not old enough to legally drive.
+Or
+What is your age? 35
+You are old enough to legally drive.
+
+Constraints
+• Use a single output statement.
+• Use a ternary operator to write this program. If your
+language doesn’t support a ternary operator, use a reg-
+ular
+ment to display the message.
+
+Challenges
+• If the user enters a number that’s less than zero or enters
+non-numeric data, display an error message that asks
+the user to enter a valid age.
+• Instead of hard-coding the driving age in your program
+logic, research driving ages for various countries and
+create a lookup table for the driving ages and countries.
+Prompt for the age, and display which countries the
+user can legally drive in.
+report erratum  •  discuss
+
+
+Chapter: 17
+Blood Alcohol Calculator
+Sometimes you have to perform a more complex calculation
+based on some provided inputs and then use that result to
+make a determination.
+Create a program that prompts for your weight, gender,
+number of drinks, the amount of alcohol by volume of the
+drinks consumed, and the amount of time since your last
+drink. Calculate your blood alcohol content (BAC) using this
+formula
+BAC = (A × 5.14 / W × r) −.015 × H
+where
+•
+•
+•
+– 0.73 for men
+– 0.66 for women
+•
+Display whether or not it’s legal to drive by comparing the
+blood alcohol content to
+
+Example Output
+Your BAC is 0.08
+It is not legal for you to drive.
+Constraint
+• Prevent the user from entering non-numeric values.
+
+Challenges
+• Handle metric units.
+• Look up the legal BAC limit by state and prompt for the
+state. Display a message that states whether or not it’s
+legal to drive based on the computed BAC.
+• Develop this as a mobile application that makes it easy
+to record each drink, updating the BAC each time a
+drink is entered.
+Chapter 4. Making Decisions
+
+
+Chapter: 18
+Temperature Converter
+You’ll often need to determine which part of a program is
+run based on user input or other events.
+Create a program that converts temperatures from Fahren-
+heit to Celsius or from Celsius to Fahrenheit. Prompt for the
+starting temperature. The program should prompt for the
+type of conversion and then perform the conversion.
+The formulas are
+C = (F −32) × 5 / 9
+and
+F = (C × 9 / 5) + 32
+
+Example Output
+Press C to convert from Fahrenheit to Celsius.
+Press F to convert from Celsius to Fahrenheit.
+Your choice: C
+Please enter the temperature in Fahrenheit: 32
+The temperature in Celsius is 0.
+
+Constraints
+• Ensure that you allow upper or lowercase values for
+and
+• Use as few output statements as possible and avoid
+repeating output strings.
+
+Challenges
+• Revise the program to ensure that inputs are entered as
+numeric values. Don’t allow the user to proceed if the
+value entered is not numeric.
+• Break the program into functions that perform the
+computations.
+• Implement this program as a GUI program that automat-
+ically updates the values when any value changes.
+• Modify the program so it also supports the Kelvin scale.
+report erratum  •  discuss
+
+
+Chapter: 19
+BMI Calculator
+You’ll often need to see if one value is within a certain range
+and alter the flow of a program as a result.
+Create a program to calculate the body mass index (BMI)
+for a person using the person’s height in inches and weight
+in pounds. The program should prompt the user for weight
+and height.
+Calculate the BMI by using the following formula:
+bmi = (weight / (height × height)) * 703
+If the BMI is between 18.5 and 25, display that the person is
+at a normal weight. If they are out of that range, tell them if
+they are underweight or overweight and tell them to consult
+their doctor.
+
+Example Output
+Your BMI is 19.5.
+You are within the ideal weight range.
+or
+Your BMI is 32.5.
+You are overweight. You should see your doctor.
+Constraint
+• Ensure your program takes only numeric data. Don’t
+let the user continue unless the data is valid.
+
+Challenges
+• Make the user interface accept height and weight in
+Imperial or metric units. You’ll need a slightly different
+formula for metric units.
+• For Imperial measurements, prompt for feet and inches
+and convert feet to inches so the user doesn’t have to.
+• Use a GUI interface with sliders for height and weight.
+Update the user interface on the fly. Use colors as well
+as text to indicate health.
+Chapter 4. Making Decisions
+
+
+Chapter: 20
+Multistate Sales Tax Calculator
+More complex programs may have decisions nested in other
+decisions, so that when one decision is made, additional
+decisions must be made.
+Create a tax calculator that handles multiple states and
+multiple counties within each state. The program prompts
+the user for the order amount and the state where the order
+will be shipped.
+For Wisconsin residents, prompt for the county of residence.
+• For Eau Claire county residents, add an additional 0.005
+tax.
+• For Dunn county residents, add an additional 0.004 tax.
+Illinois residents must be charged 8% sales tax with no
+additional county-level charge. All other states are not
+charged tax. The program then displays the tax and the total
+for Wisconsin and Illinois residents but just the total for
+everyone else.
+
+Example Output
+What is the order amount? 10
+What state do you live in? Wisconsin
+The tax is $0.50.
+The total is $10.50.
+
+Constraints
+• Ensure that all money is rounded up to the nearest cent.
+• Use a single output statement at the end of the program
+to display the program results.
+
+Challenges
+• Add support for your state and county.
+• Allow the user to enter a state abbreviation and county
+name in upper, lower, or mixed case.
+• Allow the user to also enter the state’s full name in
+upper, lower, or mixed case.
+• Implement the program using data structures to avoid
+nested
+report erratum  •  discuss
+
+
+Chapter: 21
+Numbers to Names
+Many programs display information to the end user in one
+form but use a different form inside the program. For
+example, you may show the word
+behind the scenes you’ll have a numerical value for that
+color or an internal value because you may need to represent
+the textual description in another language for Spanish-
+speaking visitors.
+Write a program that converts a number from 1 to 12 to the
+corresponding month. Prompt for a number and display the
+corresponding calendar month, with 1 being January and
+12 being December. For any value outside that range, display
+an appropriate error message.
+
+Example Output
+Please enter the number of the month: 3
+The name of the month is March.
+
+Constraints
+• Use a
+• Use a single output statement for this program.
+
+Challenges
+• Use a map or dictionary to remove the
+from the program.
+• Support multiple languages. Prompt for the language
+at the beginning of the program.
+Chapter 4. Making Decisions
+
+
+Chapter: 22
+Comparing Numbers
+Comparing one input to a known value is common enough,
+but you’ll often need to process a collection of inputs.
+Write a program that asks for three numbers. Check first to
+see that all numbers are different. If they’re not different,
+then exit the program. Otherwise, display the largest number
+of the three.
+
+Example Output
+Enter the first number: 1
+Enter the second number: 51
+Enter the third number: 2
+The largest number is 51.
+Constraint
+• Write the algorithm manually. Don’t use a built-in
+function for finding the largest number in a list.
+
+Challenges
+• Modify the program so that all entered values are
+tracked and the user is prevented from entering a
+number that’s already been entered.
+• Modify the program so that it asks for ten numbers
+instead of three.
+• Modify the program so that it asks for an unlimited
+number of numbers.
+report erratum  •  discuss
+
+
+Chapter: 23
+Troubleshooting Car Issues
+An
+that uses a knowledge base and a set of rules to perform a
+task that a human expert might do. Many websites are
+available that will help you self-diagnose a medical issue by
+answering a series of questions. And many hardware and
+software companies offer online troubleshooting tools to
+help people solve simple technical issues before calling a
+human.
+Create a program that walks the user through troubleshoot-
+ing issues with a car. Use the following decision tree to build
+the system:
+Is the car silent when 
+you turn the key?
+Are the 
+battery 
+terminals 
+corroded?
+Replace 
+cables
+and try 
+again.
+Does the car 
+make a 
+clicking 
+noise?
+Replace the 
+battery.
+Does the car 
+crank up but 
+fail to start?
+Check spark 
+plug 
+connections.
+Does the 
+engine start 
+and then 
+die?
+Does your 
+car have fuel 
+injection?
+Get it in for 
+service.
+Check to 
+ensure the 
+choke is 
+opening and 
+closing.
+Clean 
+terminals 
+and try 
+starting 
+again.
+No
+No
+No
+Yes
+No
+Yes
+No
+Yes
+Yes
+Yes
+Yes
+
+Example Output
+Is the car silent when you turn the key? y
+Are the battery terminals corroded? n
+The battery cables may be damaged.
+Replace cables and try again.
+Chapter 4. Making Decisions
+
+
+Chapter: 24
+Anagram Checker
+Using functions to abstract the logic away from the rest of
+your code makes it easier to read and easier to maintain.
+Create a program that compares two strings and determines
+if the two strings are anagrams. The program should prompt
+for both input strings and display the output as shown in
+the example that follows.
+
+Example Output
+Enter two strings and I'll tell you if they
+are anagrams:
+Enter the first string: note
+Enter the second string: tone
+"note" and "tone" are anagrams.
+
+Constraints
+• Implement the program using a function called
+gram
+returns
+program.
+• Check that both words are the same length.
+
+Challenge
+• Complete this program without using built-in language
+features. Use selection or repetition logic instead and
+develop your own algorithm.
+report erratum  •  discuss
+
+
+Chapter: 25
+Password Strength Indicator
+Functions help you abstract away complex operations, but
+they also help you build reusable components.
+Create a program that determines the complexity of a given
+password based on these rules:
+• A very weak password contains only numbers and is
+fewer than eight characters.
+• A weak password contains only letters and is fewer than
+eight characters.
+• A strong password contains letters and at least one
+number and is at least eight characters.
+• A very strong password contains letters, numbers, and
+special characters and is at least eight characters.
+
+Example Output
+The password '12345' is a very weak password.
+The password 'abcdef' is a weak password.
+The password 'abc123xyz' is a strong password.
+The password '1337h@xor!' is a very strong password.
+
+Constraints
+• Create a
+password as its argument and returns a value you can
+evaluate to determine the password strength. Do not
+have the function return a string—you may need to
+support multiple languages in the future.
+• Use a single output statement.
+
+Challenge
+• Create a GUI application or web application that dis-
+plays graphical feedback as well as text feedback in real
+time. As someone enters a password, determine its
+strength and display the result.
+Chapter 5. Functions
+
+
+Chapter: 26
+Months to Pay Off a Credit Card
+It can take a lot longer to pay off your credit card balance
+than you might realize. And the formula for figuring that
+out isn’t pretty. Hiding the formula’s complexity with a
+function can help you keep your code organized.
+Write a program that will help you determine how many
+months it will take to pay off a credit card balance. The
+program should ask the user to enter the balance of a credit
+card and the APR of the card. The program should then
+return the number of months needed.
+The formula for this is
+n = −
+1
+30
+log
+p
+log(1 + i)
+where
+•
+•
+•
+•
+
+Example Output
+What is your balance? 5000
+What is the APR on the card (as a percent)? 12
+What is the monthly payment you can make? 100
+It will take you 70 months to pay off this card.
+
+Constraints
+• Prompt for the card’s APR. Do the division internally.
+• Prompt for the APR as a percentage, not a decimal.
+• Use a function called
+accepts the balance, the APR, and the monthly payment
+as its arguments and returns the number of months.
+Don’t access any of these values outside the function.
+• Round fractions of a cent up to the next cent.
+report erratum  •  discuss
+
+
+Chapter: 27
+Validating Inputs
+Large functions aren’t very usable or maintainable. It makes
+a lot of sense to break down the logic of a program into
+smaller functions that do one thing each. The program can
+then call these functions in sequence to perform the work.
+Write a program that prompts for a first name, last name,
+employee ID, and ZIP code. Ensure that the input is valid
+according to these rules:
+• The first name must be filled in.
+• The last name must be filled in.
+• The first and last names must be at least two characters
+long.
+• An employee ID is in the format AA-1234. So, two let-
+ters, a hyphen, and four numbers.
+• The ZIP code must be a number.
+Display appropriate error messages on incorrect data.
+
+Example Output
+Enter the first name: J
+Enter the last name:
+Enter the ZIP code: ABCDE
+Enter an employee ID:
+A12-1234
+"J" is not a valid first name. It is too short.
+The last name must be filled in.
+The ZIP code must be numeric.
+A12-1234 is not a valid ID.
+Or
+Enter the first name: Jimmy
+Enter the last name: James
+Enter the ZIP code: 55555
+Enter an employee ID:
+TK-421
+There were no errors found.
+
+Constraints
+• Create a function for each type of validation you need
+to write. Then create a
+in all of the input data and invokes the specific valida-
+tion functions.
+• Use a single output statement to display the outputs.
+report erratum  •  discuss
+
+
+Chapter: 28
+Adding Numbers
+In previous programs, you asked the user for repeated input
+by writing the input statements multiple times. But it’s more
+efficient to use loops to deal with repeated input.
+Write a program that prompts the user for five numbers and
+computes the total of the numbers.
+
+Example Output
+Enter a number: 1
+Enter a number: 2
+Enter a number: 3
+Enter a number: 4
+Enter a number: 5
+The total is 15.
+
+Constraints
+• The prompting must use repetition, such as a counted
+loop, not three separate prompts.
+• Create a flowchart before writing the program.
+
+Challenges
+• Modify the program to prompt for how many numbers
+to add, instead of hard-coding the value. Be sure you
+convert the input to a number before doing the compar-
+ison.
+• Modify the program so that it only adds numbers and
+silently rejects non-numeric values. Count these invalid
+entries as attempts anyway. In other words, if the
+number of numbers to add is 5, your program should
+still prompt only five times.
+report erratum  •  discuss
+
+
+Chapter: 29
+Handling Bad Input
+The rule of 72 is a quick method for estimating how long it
+will take to double your investment, by taking the number
+72
+tool that helps you figure out if the stock, bond, or savings
+account is right for you. It’s also a good program to write to
+test for and prevent bad input because computers can’t
+divide by zero. And instead of exiting the program when
+the user enters invalid input, you can just keep prompting
+for inputs until you get one that’s valid.
+Write a quick calculator that prompts for the rate of return
+on an investment and calculates how many years it will take
+to double your investment.
+The formula is
+years = 72 / r
+where
+
+Example Output
+What is the rate of return? 0
+Sorry. That's not a valid input.
+What is the rate of return? ABC
+Sorry. That's not a valid input.
+What is the rate of return? 4
+It will take 18 years to double your initial investment.
+
+Constraints
+• Don’t allow the user to enter 0.
+• Don’t allow non-numeric values.
+• Use a loop to trap bad input, so you can ensure that the
+user enters valid values.
+
+Challenge
+• Display a different error message when the user enters
+0.
+Chapter 6. Repetition
+
+
+Chapter: 30
+Multiplication Table
+Create a program that generates multiplication tables for
+the numbers 0 through 12.
+
+Example Output
+0 X 0 = 0
+0 X 1 = 0
+...
+12 x 11 = 132
+12 x 12 = 144
+Constraint
+• Use a nested loop to complete this program.
+
+Challenges
+• Create a graphical program. Use a drop-down list to
+change the base number. Generate or update the table
+when the number is selected.
+• Generate a single multiplication table like the following:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+0
+3
+6
+9
+12
+15
+18
+21
+24
+27
+30
+33
+36
+0
+4
+8
+12
+16
+20
+24
+28
+32
+36
+40
+44
+48
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+0
+6
+12
+18
+24
+30
+36
+42
+48
+54
+60
+66
+72
+0
+7
+14
+21
+28
+35
+42
+49
+56
+63
+70
+77
+84
+0
+8
+16
+24
+32
+40
+48
+56
+64
+72
+80
+88
+96
+0
+9
+18
+27
+36
+45
+54
+63
+72
+81
+90
+99
+108
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+110
+120
+0
+11
+22
+33
+44
+55
+66
+77
+88
+99
+110
+121
+132
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+0
+12
+24
+36
+48
+60
+72
+84
+96
+108
+120
+132
+144
+12
+report erratum  •  discuss
+
+
+Chapter: 31
+Karvonen Heart Rate
+When you loop, you can control how much you increment
+the counter; you don’t always have to increment by one.
+When getting into a fitness program, you may want to figure
+out your target heart rate so you don’t overexert yourself.
+The Karvonen heart rate formula is one method you can use
+to determine your rate. Create a program that prompts for
+your age and your resting heart rate. Use the Karvonen for-
+mula to determine the target heart rate based on a range of
+intensities from 55% to 95%. Generate a table with the results
+as shown in the example output. The formula is
+TargetHeartRate = (((220 −age) −restingHR) × intensity) + restingHR
+
+Example Output
+Resting Pulse: 65
+Age: 22
+Intensity
+| Rate
+-------------|--------
+55%
+| 138 bpm
+60%
+| 145 bpm
+65%
+| 151 bpm
+:
+:
+(extra lines omitted)
+85%
+| 178 bpm
+90%
+| 185 bpm
+95%
+| 191 bpm
+
+Constraints
+• Don’t hard-code the percentages. Use a loop to incre-
+ment the percentages from 55 to 95.
+• Ensure that the heart rate and age are entered as num-
+bers. Don’t allow the user to continue without entering
+valid inputs.
+• Display the results in a tabular format.
+
+Challenge
+• Implement this as a GUI program that allows the user
+to use a slider control for the intensity, and update the
+interface in real time as the slider moves.
+Chapter 6. Repetition
+
+
+Chapter: 32
+Guess the Number Game
+Write a Guess the Number game that has three levels of
+difficulty. The first level of difficulty would be a number
+between 1 and 10. The second difficulty set would be
+between 1 and 100. The third difficulty set would be between
+1 and 1000.
+Prompt for the difficulty level, and then start the game. The
+computer picks a random number in that range and prompts
+the player to guess that number. Each time the player
+guesses, the computer should give the player a hint as to
+whether the number is too high or too low. The computer
+should also keep track of the number of guesses. Once the
+player guesses the correct number, the computer should
+present the number of guesses and ask if the player would
+like to play again.
+
+Example Output
+Let's play Guess the Number.
+Pick a difficulty level (1, 2, or 3): 1
+I have my number. What's your guess? 1
+Too low.
+Guess again: 5
+Too high. Guess again: 2
+You got it in 3 guesses!
+Play again? n
+Goodbye!
+
+Constraints
+• Don’t allow any non-numeric data entry.
+• During the game, count non-numeric entries as wrong
+guesses.
+
+Challenges
+• Map the number of guesses taken to comments:
+– 1 guess: “You’re a mind reader!”
+– 2–4 guesses: “Most impressive.”
+– 3–6 guesses: “You can do better than that.”
+– 7 or more guesses: “Better luck next time.”
+report erratum  •  discuss
+
+
+Chapter: 33
+Magic 8 Ball
+Arrays are great for storing possible responses from a pro-
+gram. If you combine that with a random number generator,
+you can pick a random entry from this list, which works
+great for games.
+Create a Magic 8 Ball game that prompts for a question and
+then displays either “Yes,” “No,” “Maybe,” or “Ask again
+later.”
+
+Example Output
+What's your question?
+Will I be rich and famous?
+Ask again later.
+Constraint
+• The value should be chosen randomly using a pseudo
+random number generator. Store the possible choices
+in a list and select one at random.
+
+Challenges
+• Implement this as a GUI application.
+• If available, use native device libraries to allow you to
+“shake” the 8 ball.
+report erratum  •  discuss
+
+
+Chapter: 34
+Employee List Removal
+Sometimes you have to locate and remove an entry from a
+list based on some criteria. You may have a deck of cards
+and need to discard one so it’s no longer in play, or you may
+need to remove values from a list of valid inputs once they’ve
+been used. Storing the values in an array makes this process
+easier. Depending on your language, you may find it safer
+and more efficient to create a new array instead of modifying
+the existing one.
+Create a small program that contains a list of employee
+names. Print out the list of names when the program runs
+the first time. Prompt for an employee name and remove
+that specific name from the list of names. Display the
+remaining employees, each on its own line.
+
+Example Output
+There are 5 employees:
+John Smith
+Jackie Jackson
+Chris Jones
+Amanda Cullen
+Jeremy Goodwin
+Enter an employee name to remove: Chris Jones
+There are 4 employees:
+John Smith
+Jackie Jackson
+Amanda Cullen
+Jeremy Goodwin
+Constraint
+• Use an array or list to store the names.
+
+Challenges
+• If the user enters a name that’s not found, print out an
+error message stating that the name does not exist.
+• Read in the list of employees from a file, with each
+employee on its own line.
+• Write the output to the
+Chapter 7. Data Structures
+
+
+Chapter: 35
+Picking a Winner
+Arrays don’t have to be hard-coded. You can take user input
+and store it in an array and then work with it.
+Create a program that picks a winner for a contest or prize
+drawing. Prompt for names of contestants until the user
+leaves the entry blank. Then randomly select a winner.
+
+Example Output
+Enter a name: Homer
+Enter a name: Bart
+Enter a name: Maggie
+Enter a name: Lisa
+Enter a name: Moe
+Enter a name:
+The winner is... Maggie.
+
+Constraints
+• Use a loop to capture user input into an array.
+• Use a random number generator to pluck a value from
+the array.
+• Don’t include a blank entry in the array.
+• Some languages require that you define the length of
+the array ahead of time. You may need to find another
+data structure, like an
+
+Challenges
+• When a winner is chosen, remove the winner from the
+list of contestants and allow more winners to be chosen.
+• Make a GUI program that shows the array of names
+being shuffled on the screen before a winner is chosen.
+• Create a separate contest registration application. Use
+this program to pull in all registered users and pick a
+winner.
+report erratum  •  discuss
+
+
+Chapter: 36
+Computing Statistics
+Statistics is important in our field. When measuring response
+times or rendering times, it’s helpful to collect data so you
+can easily spot abnormalities. For example, the standard
+deviation helps you determine which values are outliers and
+which values are within normal ranges.
+Write a program that prompts for response times from a
+website in milliseconds. It should keep asking for values
+until the user enters “done.”
+The program should print the average time (mean), the
+minimum time, the maximum time, and the standard devi-
+ation.
+To compute the average (mean)
+1.
+Compute the sum of all values.
+2.
+Divide the sum by the number of values.
+To compute the standard deviation
+1.
+Calculate the difference from the mean for each number
+and square it.
+2.
+Compute the mean of the squared values.
+3.
+Take the square root of the mean.
+
+Example Output
+Enter a number: 100
+Enter a number: 200
+Enter a number: 1000
+Enter a number: 300
+Enter a number: done
+Numbers: 100, 200, 1000, 300
+The average is 400.
+The minimum is 100.
+The maximum is 1000.
+The standard deviation is 400.25.
+
+Constraints
+• Use loops and arrays to perform the input and mathe-
+matical operations.
+Chapter 7. Data Structures
+
+
+Chapter: 37
+Password Generator
+Coming up with a password that meets specific requirements
+is something your computer can do. And it will give you
+practice using random number generators in conjunction
+with a list of known values.
+Create a program that generates a secure password. Prompt
+the user for the minimum length, the number of special
+characters, and the number of numbers. Then generate a
+password for the user using those inputs.
+
+Example Output
+What's the minimum length? 8
+How many special characters? 2
+How many numbers? 2
+Your password is
+aurn2$1s#
+
+Constraints
+• Use lists to store the characters you’ll use to generate
+the passwords.
+• Add some randomness to the password generation.
+
+Challenges
+• Randomly convert vowels to numbers, such as
+and
+• Have the program present a few options rather than a
+single result.
+• Place the password on the user’s clipboard when gener-
+ated.
+Chapter 7. Data Structures
+
+
+Chapter: 38
+Filtering Values
+Sometimes input you collect will need to be filtered down.
+Data structures and loops can make this process easier.
+Create a program that prompts for a list of numbers, sepa-
+rated by spaces. Have the program print out a new list con-
+taining only the even numbers.
+
+Example Output
+Enter a list of numbers, separated by spaces:
+1 2 3 4 5 6 7 8
+The even numbers are 2 4 6 8.
+
+Constraints
+• Convert the input to an array. Many languages can
+easily convert strings to arrays with a built-in function
+that splits apart a string based on a specified delimiter.
+• Write your own algorithm—don’t rely on the language’s
+built-in
+• Use a function called
+logic for this. The function takes in the old array and
+returns the new array.
+
+Challenge
+• Instead of prompting for numbers, read in lines from
+any text file and print out only the even-numbered lines.
+report erratum  •  discuss
+
+
+Chapter: 39
+Sorting Records
+When you’re looking at results, you’ll want to be able to sort
+them so you can find what you’re looking for quickly or do
+some quick visual comparisons.
+Given the following data set
+Separation date
+Position
+Last Name
+First Name
+2016-12-31
+Manager
+Johnson
+John
+2016-10-05
+Software Engineer
+Xiong
+Tou
+2015-12-19
+District Manager
+Michaelson
+Michaela
+Programmer
+Jacobson
+Jake
+DBA
+Jackson
+Jacquelyn
+2015-12-18
+Web Developer
+Weber
+Sally
+create a program that sorts all employees by last name and
+prints them to the screen in a tabular format.
+
+Example Output
+Name
+| Position
+| Separation Date
+--------------------|-------------------|----------------
+Jacquelyn Jackson
+| DBA
+|
+Jake Jacobson
+| Programmer
+|
+John Johnson
+| Manager
+| 2016-12-31
+Michaela Michaelson | District Manager
+| 2015-12-19
+Sally Weber
+| Web Developer
+| 2015-12-18
+Tou Xiong
+| Software Engineer | 2016-10-05
+Constraint
+• Implement the data using a list of maps.
+
+Challenges
+• Prompt for how the records should be sorted. Allow
+sorting by separation date, position, or last name.
+• Use a database such as MySQL, or a key-value store
+such as Redis, to store the employee records. Retrieve
+the records from the data store.
+Chapter 7. Data Structures
+
+
+Chapter: 40
+Filtering Records
+Sorting records is helpful, but sometimes you need to filter
+down the results to find or display only what you’re looking
+for.
+Given the following data set
+Separation date
+Position
+Last Name
+First Name
+2016-12-31
+Manager
+Johnson
+John
+2016-10-05
+Software Engineer
+Xiong
+Tou
+2015-12-19
+District Manager
+Michaelson
+Michaela
+Programmer
+Jacobson
+Jake
+DBA
+Jackson
+Jacquelyn
+2015-12-18
+Web Developer
+Weber
+Sally
+create a program that lets a user locate all records that match
+the search string by comparing the search string to the first
+or last name field.
+
+Example Output
+Enter a search string:
+Jac
+Results:
+Name
+| Position
+| Separation Date
+--------------------|-------------------|----------------
+Jacquelyn Jackson
+| DBA
+|
+Jake Jacobson
+| Programmer
+|
+Constraint
+• Implement the data using an array of maps or an asso-
+ciative array.
+
+Challenges
+• Make the search case insensitive.
+• Add the option to search by position.
+• Add the option to find all employees where their sepa-
+ration date is six months ago or more.
+• Read in the data from a file.
+report erratum  •  discuss
+
+
+Chapter: 41
+Name Sorter
+Alphabetizing the contents of a file, or sorting its contents,
+is a great way to get comfortable manipulating a file in your
+program.
+Create a program that reads in the following list of names:
+Ling, Mai
+Johnson, Jim
+Zarnecki, Sabrina
+Jones, Chris
+Jones, Aaron
+Swift, Geoffrey
+Xiong, Fong
+Read this program and sort the list alphabetically. Then print
+the sorted list to a file that looks like the following example
+output.
+
+Example Output
+Total of 7 names
+-----------------
+Ling, Mai
+Johnson, Jim
+Jones, Aaron
+Jones, Chris
+Swift, Geoffrey
+Xiong, Fong
+Zarnecki, Sabrina
+Constraint
+• Don’t hard-code the number of names.
+
+Challenges
+• Implement this program by reading in the names from
+the user, one at a time, and printing out the sorted
+results to a file.
+• Use the program to sort data from a large data set and
+see how well it performs.
+• Implement this program in a functional programming
+language and compare the programs.
+Chapter 8. Working with Files
+
+
+Chapter: 42
+Parsing a Data File
+Sometimes data comes in as a structured format that you
+have to break down and turn into records so you can process
+them. CSV, or comma-separated values, is a common stan-
+dard for doing this.
+Construct a program that reads in the following data file:
+Ling,Mai,55900
+Johnson,Jim,56500
+Jones,Aaron,46000
+Jones,Chris,34500
+Swift,Geoffrey,14200
+Xiong,Fong,65000
+Zarnecki,Sabrina,51500
+Process the records and display the results formatted as a
+table, evenly spaced, as shown in the example output.
+
+Example Output
+Last
+First
+Salary
+-------------------------
+Ling
+Mai
+55900
+Johnson
+Jim
+56500
+Jones
+Aaron
+46000
+Jones
+Chris
+34500
+Swift
+Geoffrey
+14200
+Xiong
+Fong
+65000
+Zarnecki Sabrina
+51500
+
+Constraints
+• Write your own code to parse the data. Don’t use a CSV
+parser.
+• Use spaces to align the columns.
+• Make each column one space longer than the longest
+value in the column.
+
+Challenges
+• Format the salary as currency with dollar signs and
+commas.
+• Sort the results by salary from highest to lowest.
+• Rework your program to use a CSV parsing library and
+compare the results.
+report erratum  •  discuss
+
+
+Chapter: 43
+Website Generator
+Programming languages can create files and folders too.
+Create a program that generates a website skeleton with the
+following specifications:
+• Prompt for the name of the site.
+• Prompt for the author of the site.
+• Ask if the user wants a folder for JavaScript files.
+• Ask if the user wants a folder for CSS files.
+• Generate an
+site inside the
+
+Example Output
+Site name: awesomeco
+Author: Max Power
+Do you want a folder for JavaScript? y
+Do you want a folder for CSS? y
+Created ./awesomeco
+Created ./awesomeco/index.html
+Created ./awesomeco/js/
+Created ./awesomeco/css/
+
+Challenges
+• Implement this in a scripting language on Windows,
+OSX, and Linux.
+• Implement this as a web application that provides the
+specified site as a zip file.
+Chapter 8. Working with Files
+
+
+Chapter: 44
+Product Search
+Pulling data from a file into a complex data structure makes
+parsing much simpler. Many programming languages sup-
+port the JSON format, a popular way of representing data.
+Create a program that takes a product name as input and
+retrieves the current price and quantity for that product. The
+product data is in a data file in the JSON format and looks
+like this:
+{
+"products" : [
+{"name": "Widget", "price": 25.00, "quantity": 5 },
+{"name": "Thing", "price": 15.00, "quantity": 5 },
+{"name": "Doodad", "price": 5.00, "quantity": 10 }
+]
+}
+Print out the product name, price, and quantity if the product
+is found. If no product matches the search, state that no
+product was found and start over.
+
+Example Output
+What is the product name? iPad
+Sorry, that product was not found in our inventory.
+What is the product name? Widget
+Name: Widget
+Price: $25.00
+Quantity on hand: 5
+
+Constraints
+• The file is in the JSON format. Use a JSON parser to pull
+the values out of the file.
+• If no record is found, prompt again.
+
+Challenges
+• Ensure that the product search is case insensitive.
+• When a product is not found, ask if the product should
+be added. If yes, ask for the price and the quantity, and
+save it in the JSON file. Ensure the newly added product
+is immediately available for searching without restarting
+the program.
+report erratum  •  discuss
+
+
+Chapter: 45
+Word Finder
+There will be times when you’ll need to read in one file,
+modify it, and then write a modified version of that file to
+a new file.
+Given an input file, read the file and look for all occurrences
+of the word
+the modified file to a new file.
+
+Example Output
+Given the input file of
+One should never utilize the word "utilize" in
+writing. Use "use" instead.
+The program should generate
+One should never use the word "use" in
+writing. Use "use" instead.
+
+Constraints
+• Prompt for the name of the output file.
+• Write the output to a new file.
+
+Challenges
+• Modify the program to track the number of replacements
+and report that to the screen when the program finishes.
+• Create a configuration file that maps “bad” words to
+“good” words and use this file instead of a hard-coded
+value.
+• Modify the program so it can handle a folder of files
+instead of a single file.
+Chapter 8. Working with Files
+
+
+Chapter: 46
+Word Frequency Finder
+Knowing how often a word appears in a sentence or block
+of text is helpful for creating word clouds and other types
+of word analysis. And it’s more useful when running it
+against lots of text.
+Create a program that reads in a file and counts the frequen-
+cy of words in the file. Then construct a histogram displaying
+the words and the frequency, and display the histogram to
+the screen.
+
+Example Output
+Given the text file
+badger badger badger badger mushroom mushroom
+snake badger badger badger
+the program would produce the following output:
+badger:
+*******
+mushroom: **
+snake:
+*
+Constraint
+• Ensure that the most used word is at the top of the report
+and the least used words are at the bottom.
+
+Challenges
+• Use a graphical program and generate bar graphs.
+• Test the performance of your calculation by providing
+a very large input file, such as Shakespeare’s Macbeth.
+1
+Tweak your algorithm so that it performs the word
+counting as fast as possible.
+• Write the program in another language and compare
+the processing times of the two implementations.
+1.
+http://shakespeare.mit.edu/macbeth/full.html
+report erratum  •  discuss
+
+
+Chapter: 47
+Who’s in Space?
+Did you know you can find out exactly who’s in space right
+now? The Open Notify API provides that information. Visit
+http://api.open-notify
+.org/astros.json
+people are currently in space but also their names and which
+spacecraft they’re on.
+Create a program that pulls in this data and displays the
+information from this API in a tabular format.
+
+Example Output
+There are 3 people in space right now:
+Name
+| Craft
+--------------------|------
+Gennady Padalka
+| ISS
+Mikhail Kornienko
+| ISS
+Scott Kelly
+| ISS
+Constraint
+• Read the data directly from the API and parse the results
+each time the program is run. Don’t download the data
+as text and read it in.
+
+Challenges
+• Ensure that the width of the header is as long as the
+longest value in the column.
+• Don’t repeat the name of the craft—group all people by
+craft.
+• Can you reliably sort the results alphabetically by last
+name? Be careful—some people have spaces in their
+name, like “Mary Sue Van Pelt.”
+report erratum  •  discuss
+
+
+Chapter: 48
+Grabbing the Weather
+Is it nice out today? Or should I grab my coat?
+Using the OpenWeatherMap API at
+current
+returns the current temperature for the city.
+
+Example Output
+Where are you? Chicago IL
+Chicago weather:
+65 degrees Fahrenheit
+Constraint
+• Keep the processing of the weather feed separate from
+the part of your program that displays the results.
+
+Challenges
+• The API gives the sunrise and sunset times, as well as
+the humidity and a description of the weather. Display
+that data in a meaningful way.
+• The API gives the wind direction in degrees. Convert it
+to words such as “North,” “West,” “South,” “South-
+west,” or even “South-southwest.”
+• Develop a scheme that lets the weather program tell you
+what kind of day it is. If it’s 70 degrees and clear skies,
+say that it’s a nice day out!
+• Display the temperature in both Celsius and Fahrenheit.
+• Based on the information, determine if the person needs
+a coat or an umbrella.
+Chapter 9. Working with External Services
+
+
+Chapter: 50
+Movie Recommendations
+The data provided by external services can give you a
+jumping-off point to create your own application.
+Write a program that displays information about a given
+movie. Prompt for a search query and display the title, year,
+rating, running time, and a synopsis, if one exists. Then, if
+the audience score is above 80%, recommend that the user
+watch this movie right now. If the score is below 50%, rec-
+ommend that the user avoid the movie at all costs.
+
+Example Output
+Enter the name of a movie: Guardians of the Galaxy
+Title: Guardians of the Galaxy
+Year: 2014
+Rating: PG-13
+Running Time: 121 minutes
+Description: From Marvel...
+You should watch this movie right now!
+Constraint
+• Use the Rotten Tomatoes API at
+toes.com/
+
+Challenges
+• Create a graphical version of the program. Display the
+movie poster image along with the rating information
+graphically.
+• Investigate methods to cache the movie data you’ve
+collected so that you aren’t constantly hitting the exter-
+nal API. Provide a method to expire the cache.
+Chapter 9. Working with External Services
+
+
+Chapter: 51
+Pushing Notes to Firebase
+Some external services allow you to update data, not just
+read it. Firebase
+1
+database so you can save data for web, mobile, and desktop
+applications. And you can use it with any programming
+language, thanks to its JSON-based API.
+Create a simple command-line application that lets you save
+and show notes, using Firebase to save the notes. The
+application should support the following commands:
+•
+note.
+• Use
+
+Example Output
+$
+Your note was saved.
+$
+2050-12-31 - Learn how to invert binary trees
+2050-12-30 - Notetaking on the command line is cool.
+
+Constraints
+• Create a configuration file that stores the API key.
+• Use the REST documentation at
+docs/rest/
+
+Challenges
+• Create a more generalized application that lets you
+search for and view notes.
+• Replace your implementation with one of the client
+libraries.
+• Add the ability to tag notes.
+• Revisit a few problems in
+on page 75
+1.
+https://www.firebase.com/
+report erratum  •  discuss
+
+
+Chapter: 52
+Creating Your Own Time Service
+Consuming external services is one thing, but it’s important
+to be able to create and consume your own service that others
+can use, so you can support other developers who want to
+use services you’ll provide.
+Create a simple web service that returns the current time as
+JSON data, such as:
+Then create a client application that connects to the web
+service, parses the response, and displays the time.
+
+Example Output
+The current time is 15:06:26 UTC January 4 2050.
+
+Constraints
+• In your server application, be sure to set the content
+type to
+• Build the server app with as little code as possible.
+
+Challenges
+• Build a new server that displays a random quote. Store
+quotes in an array and pick one at random to display.
+• Write a client-side component that displays the quotes
+in a different language than the one you used for the
+server.
+What You Learned
+Modern programs rely on third-party services, so it’s good
+to know how to consume them, but you’ll most likely find
+yourself using this pattern in your own work. It’s common
+to have a native mobile application reading and writing data
+to a central back end written in a server-side language. Web
+applications routinely use client-side JavaScript to work with
+server-side JSON APIs. The experience you gain from these
+exercises is in great demand.
+Now it’s time to put together everything you’ve learned by
+tackling some more robust programs.
+Chapter 9. Working with External Services
+
+
+Chapter: 53
+Todo List
+Let’s start with the good-old trusty todo list, the “Hello,
+World” of full programs. You’re going to write a command-
+line todo list program that meets the following specifications:
+• Prompt the user to enter a chore or task. Store the task
+in a permanent location so that the task persists when
+the program is restarted.
+• Allow the user to enter as many tasks as desired but
+stop entering tasks by entering a blank task.
+the blank task.
+• Display all the tasks.
+• Allow the user to remove a task, to signify it’s been
+completed.
+
+Constraints
+• Store the data in an external data source.
+• If you’re using a server-side language, consider persist-
+ing the data to Redis.
+• Consider persisting the database to a third-party service
+like Parse or Firebase.
+
+Challenges
+• Implement this in a web browser using only front-end
+technologies. Investigate using IndexedDB to save the
+items.
+• Implement the front end as an Android or iPhone app,
+but connect that front end to your own back end that
+you write using a server-side language. Create your
+own API for retrieving the list, creating a new item, and
+marking an item as complete.
+Chapter 10. Full Programs
+
+
+Chapter: 54
+URL Shortener
+Write a web application that allows users to take a long URL
+and convert it to a shortened URL similar to
+• The program should have a form that accepts the long
+URL.
+• The program should generate a short local URL like
+/abc1234
+together in a persistent data store.
+• The program should redirect visitors to the long URL
+when the short URL is visited.
+• The program should track the number of times the short
+URL is visited.
+• The program should have a statistics page for the short
+URL, such as
+show the short URL, the long URL, and the number of
+times the short URL was accessed.
+
+Constraints
+• This app must use a persistent data store that others can
+use. That means a local, in-memory system isn’t appro-
+priate.
+• Don’t allow an invalid URL to be entered into the form.
+
+Challenges
+• Detect duplicate URLs. Don’t create a new short URL if
+one already exists.
+• Use Redis as your data store.
+• Use RavenDB as your data store.
+• Record the date and time each short URL was accessed,
+and use a graphing library to graph the requests.
+report erratum  •  discuss
+
+
+Chapter: 55
+Text Sharing
+Create a web application that lets users share a snippet of
+text, similar to
+follow these specifications:
+• The user should enter the text into a text area and save
+the text.
+• The text should be stored in a data store.
+• The program should generate a URL that can be used
+to retrieve the saved text.
+• When a user follows that URL, the text should be dis-
+played, along with an invitation to edit the text.
+• When a user clicks the Edit button, the text should be
+copied and placed in the same interface used to create
+new text snippets.
+Constraint
+• Use something other than a primary key for the URL,
+such as a slug that you generate. Investigate SHA or
+MD5 hashing.
+
+Challenges
+• Modify the program so that each paste supports Mark-
+down formatting.
+• Modify the program so that the
+the existing node and keeps versions of previous notes.
+• Implement an API and make a command-line, native,
+or mobile application that can add new text snippets or
+view snippets.
+Chapter 10. Full Programs
+
+
+Chapter: 56
+Tracking Inventory
+Write a program that tracks your personal inventory. The
+program should allow you to enter an item, a serial number,
+and estimated value. The program should then be able to
+print out a tabular report in both HTML and CSV formats
+that looks like this:
+Value
+Serial Number
+Name
+$399.00
+AXB124AXY
+Xbox One
+$599.99
+S40AZBDE4
+Samsung TV
+
+Constraints
+• Store the data in a persistent local data file in JSON,
+XML, or YAML format.
+• Require numeric data for the value of each item.
+
+Challenges
+• Alter the program so that it can store photos. If you’re
+creating this application for a mobile device, allow the
+user to take a picture with the camera.
+• Allow the items to be searchable.
+report erratum  •  discuss
+
+
+Chapter: 57
+Trivia App
+Create a multiple-choice trivia application.
+• Read questions, answers, and distractors (wrong
+answers) from a file.
+• When a player starts a game
+– Choose questions at random.
+– Display the answer and distractors in a random
+order.
+– Track the number of correct answers.
+– End the game when the player selects a wrong
+answer.
+Constraint
+• Write this file using a file database or local data file
+rather than a key-value store or a relational database.
+
+Challenges
+• Add a difficulty field for the questions, and present
+increasingly difficult questions as the game progresses.
+• Expand the program by adding a mode that allows a
+parent or teacher to add, edit, or remove questions and
+answers.
+Chapter 10. Full Programs
+
+
