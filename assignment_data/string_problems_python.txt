@@ -1,0 +1,165 @@
+Write a Python program to reverse a string.
+
+def reverse_string(input_string):
+ return input_string[::-1]
+
+Write a Python program to check if a string is a palindrome.
+
+def is_palindrome(input_string):
+ return input_string == input_string[::-1]
+
+Write a Python program to count the number of vowels in a string.
+
+def count_vowels(input_string):
+ vowels = "aeiouAEIOU"
+ return sum(1 for char in input_string if char in vowels)
+
+Write a Python program to find the most frequent character in a string.
+
+def most_frequent_char(input_string):
+ char_count = {}
+ for char in input_string:
+     char_count[char] = char_count.get(char, 0) + 1
+ return max(char_count, key=char_count.get)
+
+Write a Python program to remove all duplicates from a string and return the result.
+
+def remove_duplicates(input_string):
+ return "".join(sorted(set(input_string), key=input_string.index))
+
+Write a Python program to check if a string contains only digits.
+
+def contains_only_digits(input_string):
+ return input_string.isdigit()
+
+Write a Python program to count the occurrences of each word in a sentence.
+
+def count_word_occurrences(input_string):
+ words = input_string.split()
+ word_count = {}
+ for word in words:
+     word_count[word] = word_count.get(word, 0) + 1
+
+Write a Python program to capitalize the first letter of each word in a sentence.
+
+def capitalize_first_letter(input_string):
+ return " ".join(word.capitalize() for word in input_string.split())
+
+Write a Python program to find the longest word in a sentence.
+
+def longest_word(input_string):
+ words = input_string.split()
+ return max(words, key=len)
+
+Write a Python program to check if two strings are anagrams.
+
+def are_anagrams(str1, str2):
+    return sorted(str1) == sorted(str2)
+
+Write a Python program to count the number of occurrences of a specific substring in a string.
+
+    def count_substring_occurrences(input_string, substring):
+        count = 0
+        index = 0
+        while True:
+            index = input_string.find(substring, index)
+            if index == -1:
+                break
+            count += 1
+            index += 1
+        return count
+Write a Python program to find the index of the first occurrence of a substring in a string.
+
+def find_substring(input_string, substring):
+    return input_string.find(substring)
+
+Write a Python program to replace all occurrences of a substring with another substring.
+
+def replace_substring(input_string, old_substring, new_substring):
+    return input_string.replace(old_substring, new_substring)
+
+Write a Python program to find the length of the last word in a sentence.
+
+def length_of_last_word(input_string):
+    words = input_string.split()
+    if words:
+        return len(words[-1])
+    return 0
+
+Write a Python program to reverse the order of words in a sentence.
+    def reverse_words_order(input_string):
+        words = input_string.split()
+        return " ".join(reversed(words))
+
+Write a Python program to check if a string is a valid email address.
+    import re
+    def is_valid_email(email):
+        pattern = r'^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$'
+        return bool(re.match(pattern, email))
+
+Write a Python program to check if a string is a valid URL.
+import re
+def is_valid_url(url):
+    pattern = r'^https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+'
+
+Write a Python program to find the irst non-repeated character in a string.
+
+from collections import Counter
+def first_non_repeated_char(input_string):
+    char_count = Counter(input_string)
+    for char in input_string:
+        if char_count[char] == 1:
+            return char
+    return None
+
+Write a Python program to remove all leading and trailing whitespaces from a string.
+    def trim_whitespace(input_string):
+        return input_string.strip()
+
+Write a Python program to find the common characters between two strings.
+    def common_characters(str1, str2):
+        return "".join(char for char in set(str1) if char in str2)
+
+Write a Python program to find the second most frequent character in a string.
+    def second_most_frequent_char(input_string):
+        char_count = {}
+        for char in input_string:
+            char_count[char] = char_count.get(char, 0) + 1
+        sorted_char_count = sorted(char_count.items(), key=lambda x: x[1], reverse=True)
+        return sorted_char_count[1][0] if len(sorted_char_count) >= 2 else None
+
+Write a Python program to check if a string contains only unique characters.
+    def has_unique_characters(input_string):
+        return len(set(input_string)) == len(input_string)
+
+Write a Python program to find the longest common prefix among a list of strings.
+    def longest_common_prefix(strings):
+        if not strings:
+            return ""
+        prefix = strings[0]
+        for string in strings[1:]:
+            i = 0
+            while i < len(prefix) and i < len(string) and prefix[i] == string[i]:
+                i += 1
+            prefix = prefix[:i]
+        return prefix
+
+Write a Python program to check if a string is a valid IPv4 address.
+    import socket
+    def is_valid_ipv4(ipv4):
+        try:
+            socket.inet_pton(socket.AF_INET, ipv4)
+            return True
+        except socket.error:
+            return False
+
+Write a Python program to find the first non-repeated character in a string using OrderedDict.
+    from collections import OrderedDict
+    def first_non_repeated_char_ordered(input_string):
+        char_count = OrderedDict()
+        for char in input_string:
+            char_count[char] = char_count.get(char, 0) + 1
+        for char, count in char_count.items():
+            if count == 1:
+                return char
+        return None

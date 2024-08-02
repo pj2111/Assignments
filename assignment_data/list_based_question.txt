@@ -1,0 +1,128 @@
+Question: Given a list nums, find the sum of all elements in the list.
+
+def sum_of_elements(nums):
+ return sum(nums)
+
+Question: Write a function to find the maximum element in a list.
+
+def max_element(nums):
+ return max(nums)
+
+Question: Remove all duplicates from a list.
+
+def remove_duplicates(nums):
+ return list(set(nums))
+
+Question: Count the occurrences of an element in a list.
+
+def count_occurrences(nums, target):
+ return nums.count(target)
+
+Question: Reverse a list in-place (modify the original list).
+
+def reverse_list_in_place(nums):
+ nums.reverse()
+
+Question: Check if a list is empty.
+
+def is_list_empty(nums):
+ return len(nums) == 0
+
+Question: Find the index of the first occurrence of an element in a list.
+
+def find_first_index(nums, target):
+ return nums.index(target)
+
+Question: Create a new list containing only the even numbers from the original list.
+
+def filter_even_numbers(nums):
+ return [num for num in nums if num % 2 == 0]
+
+Question: Create a new list with the squares of each element in the original list.
+
+def square_elements(nums):
+ return [num ** 2 for num in nums]
+
+Question: Sort a list in ascending order.
+
+def sort_list(nums):
+    return sorted(nums)
+
+Question: Check if all elements in the list are positive.
+
+def all_positive(nums):
+return all(num > 0 for num in nums)
+
+Question: Find the second-largest element in a list.
+def second_largest(nums):
+return sorted(nums)[-2]
+
+Question: Remove all occurrences of a specific element from the list.
+
+def remove_all_occurrences(nums, target):
+return [num for num in nums if num != target]
+
+Question: Find the common elements between two lists.
+
+def find_common_elements(list1, list2):
+return list(set(list1) & set(list2))
+
+Question: Check if a list is a palindrome (reads the same forward and backward).
+
+def is_palindrome(nums):
+return nums == nums[::-1]
+
+Question: Flatten a list of lists into a single list.
+
+def flatten_list(lists):
+return [item for sublist in lists for item in sublist]
+
+Question: Calculate the product of all elements in the list.
+
+from functools import reduce
+import operator
+def product_of_elements(nums):
+return reduce(operator.mul, nums, 1)
+
+Question: Remove the first and last elements from a list.
+
+def remove_first_and_last(nums):
+return nums[1:-1]
+
+Question: Find the difference between two lists.
+
+def list_difference(list1, list2):
+return list(set(list1) - set(list2))
+
+Question: Merge two lists and sort them in ascending order.
+
+def merge_and_sort(list1, list2):
+return sorted(list1 + list2)
+
+Question: Find the longest sublist in a list of lists.
+
+def longest_sublist(lists):
+return max(lists, key=len)
+
+Question: Split a list into chunks of a given size.
+
+def split_into_chunks(nums, chunk_size):
+return [nums[i:i+chunk_size] for i in range(0, len(nums), chunk_size)]
+
+Question: Count the number of odd and even numbers in a list.
+
+def count_odd_even(nums):
+odd_count = len([num for num in nums if num % 2 != 0])
+even_count = len(nums) - odd_count
+return odd_count, even_count
+
+Question: Find the index of the last occurrence of an element in a list.
+
+def find_last_index(nums, target):
+return len(nums) - 1 - nums[::-1].index(target)
+
+Question: Rotate a list to the left by a given number of positions.
+
+def rotate_left(nums, positions):
+positions %= len(nums)
+return nums[positions:] + nums[:positions]
