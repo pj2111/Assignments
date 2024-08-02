@@ -4,7 +4,10 @@
 			"path": ".."
 		},
 		{
-			"path": "../../../NLP_Projects/AI-App"
+			"path": "../../../NLP_Projects/Haystack"
+		},
+		{
+			"path": "../../../Important/IMP"
 		}
 	],
 	"settings": {}
