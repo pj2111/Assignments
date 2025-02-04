@@ -8,6 +8,12 @@
 		},
 		{
 			"path": "../../dsa_practice"
+		},
+		{
+			"path": "../../RAG101"
+		},
+		{
+			"path": "../../Advanced-QA-and-RAG-Series"
 		}
 	],
 	"settings": {}
